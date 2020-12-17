@@ -3,3 +3,11 @@ spring:
     name: labtech-base
 server:
   port: 8081
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    web:
+      exposure:
+        include: "info,health,metrics"
