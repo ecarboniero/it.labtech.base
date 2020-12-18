@@ -1,3 +1,8 @@
+logging:
+  level:
+    root: info
+    it.labtech.base.api: debug
+
 spring:
   application:
     name: labtech-base
