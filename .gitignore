@@ -161,3 +161,5 @@ fabric.properties
 /.idea/
 /it.labtech.base.iml
 /api/api.iml
+/api/base.api.iml
+/base.iml
