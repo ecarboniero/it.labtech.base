@@ -1,0 +1,9 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: base
+subsets:
+  - addresses:
+      - ip: 192.168.56.10
+    ports:
+      - port: 8081

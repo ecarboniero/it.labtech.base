@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: base
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 9181
+      targetPort: 8081
