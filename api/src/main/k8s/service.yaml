@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: base
+  namespace: dev00
 spec:
   type: LoadBalancer
   ports:

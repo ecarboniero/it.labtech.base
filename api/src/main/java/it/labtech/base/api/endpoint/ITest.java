@@ -1,5 +1,6 @@
 package it.labtech.base.api.endpoint;
 
+import it.labtech.base.api.om.Service;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,5 +14,5 @@ public interface ITest {
 
     @GetMapping
     @RequestMapping(value = "/service")
-    List<String> getServices();
+    List<Service> getServices();
 }
