@@ -4,8 +4,14 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping(value = "/test", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+import java.util.List;
+
+@RequestMapping(value = "/test", produces = MediaType.APPLICATION_JSON_VALUE)
 public interface ITest {
     @GetMapping
     String getValue();
+
+    @GetMapping
+    @RequestMapping(value = "/service")
+    List<String> getServices();
 }
