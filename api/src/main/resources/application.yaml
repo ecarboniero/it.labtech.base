@@ -6,6 +6,10 @@ logging:
 spring:
   application:
     name: labtech-base
+    cloud:
+      loadbalancer:
+        ribbon:
+          enabled: false
   security:
     oauth2:
       resourceserver:
