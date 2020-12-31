@@ -6,9 +6,16 @@ logging:
 spring:
   application:
     name: labtech-base
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://dev00.labtech.it/auth/realms/labtech
 
 server:
   port: ${APPLICATION_HOST_PORT:8080}
+  servlet:
+    contextPath: /base
 
 management:
   endpoint:

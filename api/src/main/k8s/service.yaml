@@ -4,7 +4,7 @@ metadata:
   name: base
   namespace: dev00
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 9181
       targetPort: 8081
