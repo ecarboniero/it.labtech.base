@@ -25,6 +25,7 @@
         <spring-cloud.version>2020.0.0-RC1</spring-cloud.version>
         <spring-boot.version>2.4.1</spring-boot.version>
         <spring-cloud-starter-kubernetes.version>1.1.7.RELEASE</spring-cloud-starter-kubernetes.version>
+        <springdoc-openapi-ui.version>1.5.2</springdoc-openapi-ui.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -51,6 +52,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
                 <version>${spring-cloud-starter-kubernetes.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc-openapi-ui.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

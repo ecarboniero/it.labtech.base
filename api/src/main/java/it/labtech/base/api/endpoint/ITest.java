@@ -12,7 +12,6 @@ public interface ITest {
     @GetMapping
     String getValue();
 
-    @GetMapping
-    @RequestMapping(value = "/service")
+    @GetMapping(value = "/service")
     List<Service> getServices();
 }
