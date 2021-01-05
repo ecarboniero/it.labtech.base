@@ -1,0 +1,13 @@
+hazelcast-client:
+  network:
+    cluster-members:
+      - 192.168.56.10
+  connection-strategy:
+    async-start: true
+    reconnect-mode: ASYNC
+    connection-retry:
+      enabled: true
+      initial-backoff-millis: 3000
+      max-backoff-millis: 120000
+      multiplier: 2
+      cluster-connect-timeout-millis: 120000
